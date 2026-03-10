@@ -1,6 +1,7 @@
 #include <iostream>
 #include <sstream>
 #include <unordered_map>
+#include <string>
 
 using namespace std;
 
@@ -34,8 +35,11 @@ string encode(const string& lib, const string& text) {
 int main() {
     string library,text;
 
-    cin>> library;
-    cin>> text;
+    
+    getline(cin, library);
+
+
+    getline(cin, text);
 
     string encoded = encode(library, text);
 
