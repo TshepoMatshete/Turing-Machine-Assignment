@@ -52,3 +52,21 @@ D \in \{ S, L, L^2, R, R^2 \}
   - \(L^2\) = move left twice  
   - \(R\) = move right  
   - \(R^2\) = move right twice
+
+
+Added a python script that runs tests for the turing machine simplifier **run_tests.py**
+
+Usage:
+    python3 run_tests.py <source.cpp> <tests_dir> [--timeout SECONDS] [--ignore-ws]
+
+Test directory format:
+    For each test case provide an input file and an expected output file.
+    The script will pair files by basename. Allowed input extensions: .in, .input, .txt
+    Allowed expected-output extensions: .out, .ans, .expected
+
+Example:
+    tests/
+      case1.in
+      case1.out
+      case2.in
+      case2.out
