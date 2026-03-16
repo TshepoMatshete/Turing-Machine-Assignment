@@ -70,3 +70,12 @@ Example:
       case1.out
       case2.in
       case2.out
+
+
+To run the c++ tester **test_runner** you follow the instructions below:
+
+to compile:
+
+g++ -std=c++17 test_runner.cpp -o test_runner
+
+if you change the name of your simplifier you can go to line 27-29 and adjust the parameters of your **test_runner.cpp** or the directory of your file containing the tests is different. This **test_runner** will run without taking in inputs from the terminap
